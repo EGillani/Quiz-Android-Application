@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">gillaniCreateFirstGUI</string>
+    <string name="quizSummary">Multiple Choice Quiz on Germany</string>
+    <string name="author">Made By: Eraj Gillani</string>
+    <string name="question">What is the capital Of Germany?</string>
+    <string name="berlinDescription">Picture of Berlin</string>
+    <string name="berlin">Berlin</string>
+    <string name="hamburg">Hamburg</string>
+    <string name="munich">Munich</string>
+    <string name="cologne">Cologne</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:textAlignment="center"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/quizSummary"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/author"
+                android:textAlignment="center"
+                android:textColor="#B6B2B2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewBerlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/berlinDescription"
+                app:srcCompat="@drawable/berlin" />
+
+            <TextView
+                android:id="@+id/testViewQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/question"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:translationX="33dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonHamburg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioClick"
+                    android:text="@string/hamburg"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonBerlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioClick"
+                    android:text="@string/berlin"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMunich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioClick"
+                    android:text="@string/munich"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCologne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioClick"
+                    android:text="@string/cologne"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
